@@ -3,7 +3,7 @@
 TOP=`pwd`
 HOUDINI_PATH=$1
 HOUDINI_VERSION=`strings ${HOUDINI_PATH}/system/lib/libhoudini.so | grep version: | awk '{print $2}'`
-PRODUCT_OUT=${TOP}/$2
+PRODUCT_OUT=$2
 HOUDINI_X64_32=$3
 echo "HOUDINI_X64_32 ${HOUDINI_X64_32}"
 
